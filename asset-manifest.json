@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/maheswarbehera/password-gen/static/css/main.4e60360d.css",
+    "main.js": "/maheswarbehera/password-gen/static/js/main.39d0138b.js",
+    "static/js/496.2d9178e3.chunk.js": "/maheswarbehera/password-gen/static/js/496.2d9178e3.chunk.js",
+    "index.html": "/maheswarbehera/password-gen/index.html",
+    "main.4e60360d.css.map": "/maheswarbehera/password-gen/static/css/main.4e60360d.css.map",
+    "main.39d0138b.js.map": "/maheswarbehera/password-gen/static/js/main.39d0138b.js.map",
+    "496.2d9178e3.chunk.js.map": "/maheswarbehera/password-gen/static/js/496.2d9178e3.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4e60360d.css",
+    "static/js/main.39d0138b.js"
+  ]
+}
