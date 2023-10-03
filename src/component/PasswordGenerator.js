@@ -2,12 +2,12 @@ import React, { useCallback, useEffect, useRef, useState } from 'react';
 
 const PasswordGenerator = () => {
 
-    const [length, setLength] = useState('8');
+    const [length, setLength] = useState('12');
     const [number, setNumber] = useState(false);
     const [character, setCharacter] = useState(false);
     const [password, setPassword] = useState();
 
-    const passwordRef = useRef()
+    const passwordRef = useRef(null)
 
     const GeneratePassword = useCallback(()  =>{
         let pass = '';
@@ -36,7 +36,8 @@ const PasswordGenerator = () => {
 
     const CopyPassword = useCallback(() =>{ 
         window.navigator.clipboard.writeText(password);
-        // passwordRef.current?.setSelectionRange(0, 12)
+        //passwordRef.current?.select();
+        //  passwordRef.current?.setSelectionRange(0, 12)
     },[password])
 
   return (
@@ -50,7 +51,7 @@ const PasswordGenerator = () => {
              <button className="btn btn-primary" ref={passwordRef} onClick={CopyPassword}>Copy</button>
              </div>
              <div className="d-flex gap-5 justify-content-center pt-4">
-             <span> <input type="range" min={6} max={12} value={length} onChange={(e) => setLength(e.target.value)}/>
+             <span> <input type="range" min={6} max={20} value={length} onChange={(e) => setLength(e.target.value)}/>
               <label htmlFor="">Length: {length}</label></span>
              <span><input type="checkbox" defaultChecked={number} onChange={()=>setNumber((prev)=> !prev )} />
               <label htmlFor="">Number</label></span>
